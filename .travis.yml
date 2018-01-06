@@ -1,0 +1,18 @@
+# Sample .travis.yml
+
+language: c
+
+os:
+  - osx
+
+before_install:
+  - git clone git://github.com/zeromq/libzmq.git
+  - chmod 755 ./make_libzmq_osx.sh
+  - ./make_libzmq_osx.sh
+
+notifications:
+  email:
+    on_success: no
+    on_failure: no
+
+sudo: required
