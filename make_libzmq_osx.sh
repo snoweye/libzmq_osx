@@ -13,5 +13,5 @@ cd libzmq
   --disable-curve-keygen \
   --disable-curve
 make -j 4
-make check
+# make check
 sudo make install
