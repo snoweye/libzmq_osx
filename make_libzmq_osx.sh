@@ -3,6 +3,7 @@
 cd libzmq
 ./autogen.sh
 ./configure \
+  --with-pic=yes \
   --enable-static=yes \
   --enable-shared=no \
   --without-docs \
